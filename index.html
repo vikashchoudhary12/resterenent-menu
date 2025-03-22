@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #6c2727;
+        }
+        header {
+            background-color: #444
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .menu-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .menu-section {
+            margin-bottom: 30px;
+        }
+        .menu-section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .menu-item img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .menu-item span {
+            flex: 1;
+        }
+        .menu-item .price {
+            margin-right: 15px;
+            font-weight: bold;
+            color: #555;
+        }
+        .menu-item button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .menu-item button:hover {
+            background-color: #555;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .qr-code {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .qr-code img {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Deshi Swaad Restaurant</h1>
+    </header>
+
+    <div class="menu-container">
+        <div class="qr-code">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://your-restaurant-website.com" alt="QR Code">
+        </div>
+        <p>Scan the QR code above to view this menu on your device!</p>
+
+        <div class="menu-section">
+            <h2>Appetizers</h2>
+            <div class="menu-item">
+                <img src="image/rool.jpg" alt="Spring Rolls">
+                <span>Spring Rolls</span>
+                <span class="price">$5.99</span>
+                <button>Add to Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="image/fruit.jpg" alt="Fruit Salad">
+                <span>Fruit Salad</span>
+                <span class="price">$4.49</span>
+                <button>Add to Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="image/sandwhich.jpg" alt="Sandwich">
+                <span>Sandwich</span>
+                <span class="price">$6.79</span>
+                <button>Add to Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="image/nuggest.jpg" alt="Nuggets">
+                <span>Nuggets</span>
+                <span class="price">$5.29</span>
+                <button>Add to Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="image/fry.jpg" alt="French Fries">
+                <span>French Fries</span>
+                <span class="price">$3.99</span>
+                <button>Add to Order</button>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Main Course</h2>
+            <div class="menu-item">
+                <img src="image/salmon.jpg" alt="Grilled Salmon">
+                <span>Grilled Salmon</span>
+                <span class="price">$12.99</span>
+                <button>Add to Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="image/lunch.jpg" alt="healthy lunch">
+                <span>healthy lunch</span>
+                <span class="price">$9.49</span>
+                <button>Add to Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="image/spicy-chicken.webp" alt="Spicy Chicken">
+                <span>Spicy Chicken</span>
+                <span class="price">$10.79</span>
+                <button>Add to Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="image/thali.jpg" alt="Special Thali">
+                <span>Special Thali</span>
+                <span class="price">$14.99</span>
+                <button>Add to Order</button>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Desserts</h2>
+            <div class="menu-item">
+                <img src="image/cake.jpg" alt="Chocolate Lava Cake">
+                <span>Chocolate Lava Cake</span>
+                <span class="price">$6.99</span>
+                <button>Add to Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="image/chocalate.jpg" alt="Chocolate">
+                <span>Chocolate</span>
+                <span class="price">$2.99</span>
+                <button>Add to Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="image/cold drink.png" alt="cold drink">
+                <span>Cold drink</span>
+                <span class="price">$4.49</span>
+                <button>Add to Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="image/maggi.webp" alt="Maggi">
+                <span>Maggi</span>
+                <span class="price">$3.49</span>
+                <button>Add to Order</button>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Beverages</h2>
+            <div class="menu-item">
+                <img src="image/mojito.jpg" alt="Mojito">
+                <span>Mojito</span>
+                <span class="price">$4.99</span>
+                <button>Add to Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="image/milk shek.jpg" alt="Milkshake">
+                <span>Milk Shake</span>
+                <span class="price">$5.49</span>
+                <button>Add to Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="image/tes lemon.jpg" alt="Lemon Tea">
+                <span>Lemon Tea</span>
+                <span class="price">$3.29</span>
+                <button>Add to Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="image/coffee.jpg" alt="Coffee">
+                <span>Coffee</span>
+                <span class="price">$2.99</span>
+                <button>Add to Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="image/milk shek.jpg" alt="Nestea">
+                <span>Nestea</span>
+                <span class="price">$3.49</span>
+                <button>Add to Order</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Deshi Swaad Restaurant. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
